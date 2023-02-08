@@ -13,6 +13,7 @@
 		84F2BA9A2993DACC000730E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F2BA982993DACC000730E5 /* Main.storyboard */; };
 		84F2BA9C2993DACE000730E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F2BA9B2993DACE000730E5 /* Assets.xcassets */; };
 		84F2BA9F2993DACE000730E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F2BA9D2993DACE000730E5 /* LaunchScreen.storyboard */; };
+		84F2BAA72993DE0A000730E5 /* Ex1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2BAA62993DE0A000730E5 /* Ex1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		84F2BA9B2993DACE000730E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F2BA9E2993DACE000730E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F2BAA02993DACE000730E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F2BAA62993DE0A000730E5 /* Ex1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				84F2BA9B2993DACE000730E5 /* Assets.xcassets */,
 				84F2BA9D2993DACE000730E5 /* LaunchScreen.storyboard */,
 				84F2BAA02993DACE000730E5 /* Info.plist */,
+				84F2BAA62993DE0A000730E5 /* Ex1ViewController.swift */,
 			);
 			path = "sol-td03";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				84F2BA972993DACC000730E5 /* ViewController.swift in Sources */,
 				84F2BA932993DACC000730E5 /* AppDelegate.swift in Sources */,
 				84F2BA952993DACC000730E5 /* SceneDelegate.swift in Sources */,
+				84F2BAA72993DE0A000730E5 /* Ex1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
