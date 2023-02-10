@@ -105,18 +105,83 @@
         <!--Exercice 3-->
         <scene sceneID="cwy-Tb-B9j">
             <objects>
-                <viewController title="Exercice 3" id="1dT-6J-Q8b" sceneMemberID="viewController">
+                <viewController title="Exercice 3" id="1dT-6J-Q8b" customClass="Ex3ViewController" customModule="sol_td03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NuK-w7-9qf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hx2-qF-3wf">
+                                <rect key="frame" x="137" y="67" width="98" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="radioUncheck" title=" Decaf"/>
+                                <connections>
+                                    <action selector="clickDecaf:" destination="1dT-6J-Q8b" eventType="touchUpInside" id="r44-wW-Yn1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeN-kC-ICX">
+                                <rect key="frame" x="137" y="129" width="94" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="radioUncheck" title=" Moka"/>
+                                <connections>
+                                    <action selector="clickMocka:" destination="1dT-6J-Q8b" eventType="touchUpInside" id="nPI-6C-eYG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OR-4I-6AF">
+                                <rect key="frame" x="143" y="253" width="98" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="boxUncheck" title=" Sugar"/>
+                                <connections>
+                                    <action selector="clickSugar:" destination="1dT-6J-Q8b" eventType="touchUpInside" id="WOV-1P-Kj2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzF-4e-CqP">
+                                <rect key="frame" x="47" y="458" width="284" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P90-bS-O5x">
+                                <rect key="frame" x="127" y="395" width="138" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choose">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickChoose:" destination="1dT-6J-Q8b" eventType="touchUpInside" id="dqj-3H-RZA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-q4-LQF">
+                                <rect key="frame" x="142" y="314" width="84" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="boxUncheck" title=" Milk"/>
+                                <connections>
+                                    <action selector="clickMilk:" destination="1dT-6J-Q8b" eventType="touchUpInside" id="jHy-YM-c3K"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RlF-6k-2P2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="hnb-XK-M41"/>
+                    <connections>
+                        <outlet property="btnDecaf" destination="hx2-qF-3wf" id="c1j-6z-dbo"/>
+                        <outlet property="btnMacka" destination="SeN-kC-ICX" id="WYq-jj-NFj"/>
+                        <outlet property="btnMilk" destination="fG2-q4-LQF" id="FRt-nd-NEL"/>
+                        <outlet property="btnSugar" destination="3OR-4I-6AF" id="4nm-sb-UP8"/>
+                        <outlet property="lblResult" destination="PzF-4e-CqP" id="hHp-Eb-yz2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHT-4a-5bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="364"/>
+            <point key="canvasLocation" x="933.58778625954199" y="363.38028169014086"/>
         </scene>
         <!--Exercice 2-->
         <scene sceneID="JjL-lc-Sa9">
@@ -173,6 +238,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="boxUncheck" width="24" height="24"/>
+        <image name="radioUncheck" width="24" height="24"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
