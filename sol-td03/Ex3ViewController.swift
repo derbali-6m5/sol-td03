@@ -57,10 +57,10 @@ class Ex3ViewController: UIViewController {
     @IBAction func clickChoose(_ sender: Any) {
         var sup = ""
         if withMilk {
-            sup = "\(sup) with milk"
+            sup += " with milk"
         }
         if withSugar {
-            sup = "\(sup) with sugar"
+            sup += " with sugar"
         }
         self.lblResult.text = "Your coffee is \(self.coffeeType), \(sup) "
     }
